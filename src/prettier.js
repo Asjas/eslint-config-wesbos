@@ -1,7 +1,7 @@
 module.exports = {
   printWidth: 120,
   tabWidth: 2,
-  arrowParens: 'all',
+  arrowParens: 'allways',
   useTabs: false,
   semi: true,
   singleQuote: true,

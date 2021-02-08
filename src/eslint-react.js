@@ -1,4 +1,4 @@
-const base = require('./base');
+const base = require('./base-rules');
 
 module.exports = {
   extends: ['airbnb', 'prettier', 'prettier/react'],

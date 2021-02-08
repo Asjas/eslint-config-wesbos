@@ -1,7 +1,6 @@
 module.exports = {
-  'no-debugger': 0,
+  'no-debugger': 1,
   'no-alert': 0,
-  'no-await-in-loop': 0,
   'no-return-assign': ['error', 'except-parens'],
   'no-restricted-syntax': [2, 'ForInStatement', 'DoWhileStatement', 'LabeledStatement', 'WithStatement'],
   'no-unused-vars': [
@@ -30,7 +29,7 @@ module.exports = {
       props: false,
     },
   ],
-  'no-console': 0,
+  'no-console': 1,
   'import/prefer-default-export': 0,
   import: 0,
   'func-names': 0,

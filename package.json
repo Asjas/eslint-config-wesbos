@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-asjas",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "ESLint + Prettier bundled to ease my suffering!",
   "main": "index.js",
   "keywords": [

@@ -1,5 +1,5 @@
-const config = require('./');
+const { prettierConfig } = require('./');
 
 module.exports = {
-  ...config.prettierConfig,
+  ...prettierConfig,
 };

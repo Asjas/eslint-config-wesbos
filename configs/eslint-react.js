@@ -1,13 +1,14 @@
 const base = require('./rules/base-rules');
 
 module.exports = {
-  extends: ['airbnb', 'prettier', 'prettier/react'],
+  extends: ['airbnb'],
   parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: {
       impliedStrict: true,
-      classes: true,
+      jsx: true,
     },
+    ecmaVersion: 2021,
   },
   env: {
     browser: true,

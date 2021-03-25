@@ -1,9 +1,15 @@
 module.exports = {
   rules: {
-    'no-debugger': 1,
+    'arrow-body-style': [2, 'as-needed'],
+    'consistent-return': 2,
+    'func-names': 0,
+    'max-len': 0,
     'no-alert': 1,
-    'no-return-assign': ['error', 'except-parens'],
+    'no-console': 1,
+    'no-debugger': 1,
+    'no-param-reassign': 2,
     'no-restricted-syntax': [2, 'ForInStatement', 'DoWhileStatement', 'LabeledStatement', 'WithStatement'],
+    'no-return-assign': [2, 'except-parens'],
     'no-unused-vars': [
       1,
       {
@@ -11,33 +17,12 @@ module.exports = {
         argsIgnorePattern: 'res|next|^err',
       },
     ],
-    'prefer-const': [
-      'error',
-      {
-        destructuring: 'all',
-      },
-    ],
-    'arrow-body-style': [2, 'as-needed'],
     'no-unused-expressions': [
       2,
       {
         allowTaggedTemplates: true,
       },
     ],
-    'no-param-reassign': [
-      2,
-      {
-        props: false,
-      },
-    ],
-    'no-console': 1,
-    'func-names': 0,
-    'space-before-function-paren': 0,
-    'comma-dangle': 0,
-    'max-len': 0,
-    'no-underscore-dangle': 0,
-    'consistent-return': 0,
-    radix: 0,
     'no-shadow': [
       2,
       {
@@ -45,5 +30,13 @@ module.exports = {
         allow: ['resolve', 'reject', 'done', 'next', 'err', 'error'],
       },
     ],
+    'prefer-const': [
+      2,
+      {
+        destructuring: 'all',
+      },
+    ],
+    radix: 0,
+    'space-before-function-paren': [2, 'always'],
   },
 };

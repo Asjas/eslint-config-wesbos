@@ -4,46 +4,38 @@
 
 ### ESLint Config
 
-Create a file named `.eslintrc.js` in the root folder of the project. Then add one of the following configs.
+Create a file named `.eslintrc` in the root folder of the project. Then add one of the following configs.
 
 #### Node.js Config
 
 ```js
-const { nodeEslint } = require('eslint-config-asjas');
-
-module.exports = {
-  ...nodeEslint,
-};
+{
+  "extends": ["eslint-config-asjas/node"]
+}
 ```
 
 #### Node.js TypeScript Config
 
 ```js
-const { nodeEslintTS } = require('eslint-config-asjas');
-
-module.exports = {
-  ...nodeEslintTS,
-};
+{
+  "extends": ["eslint-config-asjas/node-typescript"]
+}
 ```
 
 #### React Config
 
 ```js
-const { reactEslint } = require('eslint-config-asjas');
-
-module.exports = {
-  ...reactEslint,
-};
+{
+  "extends": ["eslint-config-asjas/react"]
+}
 ```
 
 #### React TypeScript Config
 
 ```js
-const { reactEslintTS } = require('eslint-config-asjas');
-
-module.exports = {
-  ...reactEslintTS,
-};
+{
+  "extends": ["eslint-config-asjas/react-typescript"]
+}
 ```
 
 ### Prettier Config
@@ -51,10 +43,8 @@ module.exports = {
 Create a file named `prettier.config.js` in the root folder of the project. Then add the following config.
 
 ```js
-const { prettierConfig } = require('eslint-config-asjas');
-
 module.exports = {
-  ...prettierConfig,
+  ...require('eslint-config-asjas/prettier'),
 };
 ```
 
@@ -72,8 +62,8 @@ module.exports = {
 
 ## VS Code extensions
 
-* [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-* [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 ### VS Code settings
 
@@ -81,10 +71,10 @@ module.exports = {
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
+    "source.fixAll.eslint": true
   },
   "editor.formatOnSave": true,
   "eslint.alwaysShowStatus": true,
-  "prettier.requireConfig": true,
+  "prettier.requireConfig": true
 }
 ```

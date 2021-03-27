@@ -128,10 +128,11 @@ In a mono-repo you might need to change `.gitignore` to `../.gitnore` to referen
 "scripts": {
   "build": "replace with your build command",
   "check-types": "tsc",
-  "lint": "eslint --ignore-path .gitignore .",
-  "lint:fix": "eslint --ignore-path .gitignore --fix .",
-  "format": "prettier --ignore-path .gitignore --write",
-  "check-format": "prettier --ignore-path .gitignore --list-different",
+  "lint": "eslint --ignore-path .gitignore --ext .js,.mjs,.ts,.tsx .",
+  "lint-fix": "npm run lint -- --fix",
+  "prettier": "prettier --ignore-path .gitignore \"**/**/*.+(js|mjs|json|ts|tsx)\"",
+  "format": "npm run prettier -- --write",
+  "check-format": "npm run prettier -- --list-different",
   "validate": "npm-run-all --parallel check-types check-format lint build"
 }
 ```
@@ -157,10 +158,10 @@ Add these fields to your `package.json` file.
   }
 },
 "lint-staged": {
-  "*.+(js|ts|tsx)": [
+  "*.+(js|mjs|ts|tsx)": [
     "eslint"
   ],
-  "**/**/*.+(js|json|ts|tsx)": [
+  "**/**/*.+(js|mjs|json|ts|tsx)": [
     "prettier --write",
     "git add"
   ]

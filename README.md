@@ -1,5 +1,20 @@
 # ESLint + Prettier
 
+## Prerequisites
+
+* Node.js 14+
+* npm 7+
+
+The reason for npm 7+ being a prerequisite is that npm 7 installs peerDependencies automatically and we need plenty of peerDependencies.
+
+### Installation instructions (eslint-config-asjas)
+
+Run this command in the folder that you want to enable ESLint or Prettier.
+
+```sh
+npm i -D eslint-config-asjas
+```
+
 ## Configs
 
 ### ESLint Config
@@ -85,18 +100,51 @@ In a mono-repo you might need to change `.gitignore` to `../.gitnore` to referen
 
 ```json
 "scripts": {
+  "build": "replace with your build command",
+  "check-types": "tsc",
   "lint": "eslint --ignore-path .gitignore .",
   "lint:fix": "eslint --ignore-path .gitignore --fix .",
   "format": "prettier --ignore-path .gitignore --write",
   "check-format": "prettier --ignore-path .gitignore --list-different",
-  "validate": "npm run check-format && npm run lint"
+  "validate": "npm-run-all --parallel check-types check-format lint build"
 }
+```
+
+## Husky and lint-staged
+
+The packages `husky` and `lint-staged` are used to create pre-commit hooks to check our code.
+
+### Installation instructions (Husky and lint-staged)
+
+```sh
+npm i -D npm-run-all husky lint-staged
+```
+
+#### NPM Scripts (Husky and lint-staged)
+
+Add these fields to your `package.json` file.
+
+```json
+"husky": {
+  "hooks": {
+    "pre-commit": "npm run check-types && lint-staged && npm run build"
+  }
+},
+"lint-staged": {
+  "*.+(js|ts|tsx)": [
+    "eslint"
+  ],
+  "**/**/*.+(js|json|ts|tsx)": [
+    "prettier --write",
+    "git add"
+  ]
+},
 ```
 
 ## VS Code extensions
 
-- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+* [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+* [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 ### VS Code settings
 

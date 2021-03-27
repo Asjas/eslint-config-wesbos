@@ -71,6 +71,10 @@ module.exports = {
 
 ## NPM Scripts
 
+You can add the following NPM scripts to your `package.json` file to simplify the linting and formatting of your code.
+
+In a mono-repo you might need to change `.gitignore` to `../.gitnore` to reference a valid Git ignore file.
+
 ```json
 "scripts": {
   "lint": "eslint --ignore-path .gitignore .",

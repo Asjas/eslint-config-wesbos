@@ -64,8 +64,9 @@ module.exports = {
 "scripts": {
   "lint": "eslint --ignore-path .gitignore .",
   "lint:fix": "eslint --ignore-path .gitignore --fix .",
-  "format": "prettier --ignore-path .gitignore",
-  "format:fix": "prettier --ignore-path .gitignore --write"
+  "format": "prettier --ignore-path .gitignore --write",
+  "check-format": "prettier --ignore-path .gitignore --list-different",
+  "validate": "npm run check-format && npm run lint"
 }
 ```
 
@@ -73,3 +74,17 @@ module.exports = {
 
 * [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+### VS Code settings
+
+```json
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+  },
+  "editor.formatOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "prettier.requireConfig": true,
+}
+```

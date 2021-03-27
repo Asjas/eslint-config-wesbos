@@ -1,10 +1,10 @@
 module.exports = {
   extends: [
     'eslint-config-airbnb-base',
-    './rules/base',
-    './rules/import',
-    './rules/node',
-    './rules/promise',
+    '../rules/base',
+    '../rules/import',
+    '../rules/node',
+    '../rules/promise',
     'eslint-config-prettier',
   ].map(require.resolve),
   parserOptions: {

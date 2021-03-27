@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-asjas",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "ESLint + Prettier configs bundled to ease my suffering!",
   "main": "index.js",
   "keywords": [
@@ -16,33 +16,31 @@
     "node": ">=12.0.0"
   },
   "peerDependencies": {
-    "eslint": ">=7.0.0",
+    "eslint": ">=7.14.0",
     "eslint-config-airbnb": ">=18.0.0",
     "eslint-config-airbnb-base": ">=14.0.0",
-    "eslint-config-prettier": ">=7.0.0",
+    "eslint-config-prettier": ">=8.0.0",
     "eslint-plugin-html": ">=6.0.0",
-    "eslint-plugin-import": ">=2.0.0",
-    "eslint-plugin-jsx-a11y": ">=6.0.0",
+    "eslint-plugin-import": ">=2.16.0",
+    "eslint-plugin-jsx-a11y": ">=6.2.0",
     "eslint-plugin-node": ">=11.0.0",
-    "eslint-plugin-prettier": ">=3.0.0",
-    "eslint-plugin-promise": ">=4.0.0",
-    "eslint-plugin-react": ">=7.0.0",
+    "eslint-plugin-promise": ">=4.2.0",
+    "eslint-plugin-react": ">=7.14.0",
     "eslint-plugin-react-hooks": ">=4.0.0",
-    "prettier": ">=2.0.0"
+    "prettier": ">=2.1.0"
   },
   "dependencies": {
-    "eslint": ">=7.0.0",
+    "eslint": ">=7.14.0",
     "eslint-config-airbnb": ">=18.0.0",
     "eslint-config-airbnb-base": ">=14.0.0",
-    "eslint-config-prettier": ">=7.0.0",
+    "eslint-config-prettier": ">=8.0.0",
     "eslint-plugin-html": ">=6.0.0",
-    "eslint-plugin-import": ">=2.0.0",
-    "eslint-plugin-jsx-a11y": ">=6.0.0",
+    "eslint-plugin-import": ">=2.16.0",
+    "eslint-plugin-jsx-a11y": ">=6.2.0",
     "eslint-plugin-node": ">=11.0.0",
-    "eslint-plugin-prettier": ">=3.0.0",
-    "eslint-plugin-promise": ">=4.0.0",
-    "eslint-plugin-react": ">=7.0.0",
+    "eslint-plugin-promise": ">=4.2.0",
+    "eslint-plugin-react": ">=7.14.0",
     "eslint-plugin-react-hooks": ">=4.0.0",
-    "prettier": ">=2.0.0"
+    "prettier": ">=2.1.0"
   }
 }

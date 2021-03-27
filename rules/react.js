@@ -1,14 +1,15 @@
 module.exports = {
-  extends: [
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
-    'plugin:jsx-a11y/recommended',
-  ],
+  extends: ['plugin:react/recommended', 'plugin:react-hooks/recommended', 'plugin:jsx-a11y/recommended'],
   settings: {
+    react: {
+      version: 'detect',
+    },
     linkComponents: [
       // Components used as alternatives to <a> for linking, eg. <Link to={ url } />
       'Hyperlink',
       { name: 'Link', linkAttribute: 'to' },
+      'Hyperlink',
+      { name: 'Link', linkAttribute: 'href' },
     ],
   },
   rules: {
@@ -20,7 +21,8 @@ module.exports = {
     'react/no-children-prop': 0,
     'react/no-unescaped-entities': 0,
     'react/prefer-stateless-function': 0,
-    'react/prop-types': 0,
+    'react/jsx-props-no-spreading': 0,
+    'react/prop-types': 1,
     'react/react-in-jsx-scope': 0,
     'react/require-default-props': 2,
     'react/jsx-filename-extension': [

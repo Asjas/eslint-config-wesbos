@@ -1,23 +1,23 @@
 module.exports = {
   extends: [
-    'eslint-config-airbnb-typescript',
-    './rules/base',
-    './rules/import',
-    './rules/jest',
-    './rules/promise',
-    './rules/react',
-    './rules/testing-libary',
-    './rules/typescript',
-    'eslint-config-prettier',
+    "eslint-config-airbnb-typescript",
+    "./rules/base",
+    "./rules/import",
+    "./rules/jest",
+    "./rules/promise",
+    "./rules/react",
+    "./rules/testing-libary",
+    "./rules/typescript",
+    "eslint-config-prettier",
   ].map(require.resolve),
-  parser: '@typescript-eslint/parser',
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
       impliedStrict: true,
       jsx: true,
     },
     ecmaVersion: 2021,
-    sourceType: 'module',
+    sourceType: "module",
   },
   env: {
     browser: true,
@@ -27,21 +27,21 @@ module.exports = {
   },
   settings: {
     react: {
-      version: 'detect',
+      version: "detect",
     },
     linkComponents: [
       // Components used as alternatives to <a> for linking, eg. <Link to={ url } />
-      'Hyperlink',
-      { name: 'Link', linkAttribute: 'to' },
-      'Hyperlink',
-      { name: 'Link', linkAttribute: 'href' },
+      "Hyperlink",
+      { name: "Link", linkAttribute: "to" },
+      "Hyperlink",
+      { name: "Link", linkAttribute: "href" },
     ],
   },
   rules: {
-    'react/jsx-filename-extension': [
+    "react/jsx-filename-extension": [
       2,
       {
-        extensions: ['.tsx'],
+        extensions: [".tsx"],
       },
     ],
   },

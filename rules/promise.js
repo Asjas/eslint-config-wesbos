@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ['promise'],
-  extends: ['plugin:promise/recommended'],
+  plugins: ["promise"],
+  extends: ["plugin:promise/recommended"],
   rules: {},
 };

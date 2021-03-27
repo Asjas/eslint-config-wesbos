@@ -1,5 +1,3 @@
-const { prettierConfig } = require('./');
-
 module.exports = {
-  ...prettierConfig,
+  ...require("prettier"),
 };

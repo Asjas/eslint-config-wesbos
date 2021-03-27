@@ -1,13 +1,13 @@
 module.exports = {
   extends: [
-    'eslint-config-airbnb',
-    './rules/base',
-    './rules/import',
-    './rules/jest',
-    './rules/promise',
-    './rules/react',
-    './rules/testing-libary',
-    'eslint-config-prettier',
+    "eslint-config-airbnb",
+    "./rules/base",
+    "./rules/import",
+    "./rules/jest",
+    "./rules/promise",
+    "./rules/react",
+    "./rules/testing-libary",
+    "eslint-config-prettier",
   ].map(require.resolve),
   parserOptions: {
     ecmaFeatures: {
@@ -15,7 +15,7 @@ module.exports = {
       jsx: true,
     },
     ecmaVersion: 2021,
-    sourceType: 'module',
+    sourceType: "module",
   },
   env: {
     browser: true,
@@ -25,14 +25,14 @@ module.exports = {
   },
   settings: {
     react: {
-      version: 'detect',
+      version: "detect",
     },
     linkComponents: [
       // Components used as alternatives to <a> for linking, eg. <Link to={ url } />
-      'Hyperlink',
-      { name: 'Link', linkAttribute: 'to' },
-      'Hyperlink',
-      { name: 'Link', linkAttribute: 'href' },
+      "Hyperlink",
+      { name: "Link", linkAttribute: "to" },
+      "Hyperlink",
+      { name: "Link", linkAttribute: "href" },
     ],
   },
 };

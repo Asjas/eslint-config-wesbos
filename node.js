@@ -1,19 +1,19 @@
 module.exports = {
   extends: [
-    'eslint-config-airbnb-base',
-    './rules/base',
-    './rules/jest',
-    './rules/import',
-    './rules/node',
-    './rules/promise',
-    'eslint-config-prettier',
+    "eslint-config-airbnb-base",
+    "./rules/base",
+    "./rules/jest",
+    "./rules/import",
+    "./rules/node",
+    "./rules/promise",
+    "eslint-config-prettier",
   ].map(require.resolve),
   parserOptions: {
     ecmaFeatures: {
       impliedStrict: true,
     },
     ecmaVersion: 2021,
-    sourceType: 'module',
+    sourceType: "module",
   },
   env: {
     browser: false,

@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ['testing-library'],
-  extends: ['plugin:testing-library/react'],
+  plugins: ["testing-library"],
+  extends: ["plugin:testing-library/react"],
   rules: {},
 };

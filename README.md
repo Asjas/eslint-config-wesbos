@@ -2,8 +2,8 @@
 
 ## Prerequisites
 
-* Node.js 14+
-* npm 7+
+- Node.js 14+
+- npm 7+
 
 The reason for npm 7+ being a prerequisite is that npm 7 installs peerDependencies automatically and we need plenty of peerDependencies.
 
@@ -88,7 +88,7 @@ Create a file named `.prettierrc.js` in the root folder of the project. Then add
 
 ```js
 module.exports = {
-  ...require('eslint-config-asjas/prettier'),
+  ...require("eslint-config-asjas/prettier"),
 };
 ```
 
@@ -120,7 +120,7 @@ The packages `husky` and `lint-staged` are used to create pre-commit hooks to ch
 npm i -D npm-run-all husky lint-staged
 ```
 
-#### NPM Scripts (Husky and lint-staged)
+#### Configuration (Husky and lint-staged)
 
 Add these fields to your `package.json` file.
 
@@ -143,8 +143,8 @@ Add these fields to your `package.json` file.
 
 ## VS Code extensions
 
-* [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-* [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 ### VS Code settings
 

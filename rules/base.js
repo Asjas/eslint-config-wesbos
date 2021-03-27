@@ -13,6 +13,7 @@ module.exports = {
     'no-restricted-globals': 0,
     'no-restricted-syntax': [2, 'ForInStatement', 'DoWhileStatement', 'LabeledStatement', 'WithStatement'],
     'no-return-assign': [2, 'except-parens'],
+    'no-underscore-dangle': 0,
     'no-use-before-define': 0,
     'no-void': 0,
     'no-unused-vars': [

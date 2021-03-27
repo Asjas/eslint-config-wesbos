@@ -2,10 +2,11 @@ module.exports = {
   extends: [
     'eslint-config-airbnb-typescript',
     './rules/base',
-    './rules/base',
     './rules/import',
+    './rules/jest',
     './rules/promise',
     './rules/react',
+    './rules/testing-libary',
     './rules/typescript',
     'eslint-config-prettier',
   ].map(require.resolve),

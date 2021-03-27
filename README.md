@@ -8,7 +8,7 @@ Create a file named `.eslintrc` in the root folder of the project. Then add one 
 
 #### Node.js Config
 
-```js
+```json
 {
   "extends": ["eslint-config-asjas/node"]
 }
@@ -16,7 +16,7 @@ Create a file named `.eslintrc` in the root folder of the project. Then add one 
 
 #### Node.js TypeScript Config
 
-```js
+```json
 {
   "extends": ["eslint-config-asjas/node-typescript"]
 }
@@ -24,7 +24,7 @@ Create a file named `.eslintrc` in the root folder of the project. Then add one 
 
 #### React Config
 
-```js
+```json
 {
   "extends": ["eslint-config-asjas/react"]
 }
@@ -32,7 +32,7 @@ Create a file named `.eslintrc` in the root folder of the project. Then add one 
 
 #### React TypeScript Config
 
-```js
+```json
 {
   "extends": ["eslint-config-asjas/react-typescript"]
 }
@@ -40,7 +40,7 @@ Create a file named `.eslintrc` in the root folder of the project. Then add one 
 
 ### Prettier Config
 
-Create a file named `prettier.config.js` in the root folder of the project. Then add the following config.
+Create a file named `.prettierrc.js` in the root folder of the project. Then add the following config.
 
 ```js
 module.exports = {

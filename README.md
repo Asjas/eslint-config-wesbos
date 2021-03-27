@@ -18,7 +18,11 @@ Create a file named `.eslintrc` in the root folder of the project. Then add one 
 
 ```json
 {
-  "extends": ["eslint-config-asjas/node-typescript"]
+  "extends": ["eslint-config-asjas/node-typescript"],
+  "parserOptions": {
+    "tsconfigRootDir": ".",
+    "project": "tsconfig.json"
+  }
 }
 ```
 
@@ -34,7 +38,11 @@ Create a file named `.eslintrc` in the root folder of the project. Then add one 
 
 ```json
 {
-  "extends": ["eslint-config-asjas/react-typescript"]
+  "extends": ["eslint-config-asjas/react-typescript"],
+  "parserOptions": {
+    "tsconfigRootDir": ".",
+    "project": "tsconfig.json"
+  }
 }
 ```
 

@@ -1,14 +1,8 @@
 module.exports = {
-  plugins: ['html'],
   extends: [
     'eslint-config-airbnb',
-    'plugin:import/errors',
-    'plugin:import/warnings',
-    'plugin:promise/recommended',
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
-    'plugin:jsx-a11y/recommended',
     './rules/base',
+    './rules/jest',
     './rules/import',
     './rules/promise',
     './rules/react',

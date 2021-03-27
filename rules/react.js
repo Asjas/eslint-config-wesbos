@@ -1,4 +1,6 @@
 module.exports = {
+  plugins: ['react', 'react-hooks', 'jsx-a11y'],
+  extends: ['plugin:react/recommended', 'plugin:react-hooks/recommended', 'plugin:jsx-a11y/recommended'],
   rules: {
     // Custom React rules
     'react/button-has-type': 2,
@@ -31,13 +33,14 @@ module.exports = {
 
     // Custom Accessibility rules
     'jsx-a11y/accessible-emoji': 2,
+    'jsx-a11y/img-redundant-alt': 0,
+    'jsx-a11y/href-no-hash': 0,
     'jsx-a11y/label-has-associated-control': [
       2,
       {
         assert: 'either',
       },
     ],
-    'jsx-a11y/href-no-hash': 0,
     'jsx-a11y/anchor-is-valid': [
       1,
       {

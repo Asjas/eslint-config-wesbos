@@ -1,14 +1,11 @@
 module.exports = {
   extends: [
     'eslint-config-airbnb-base',
-    'plugin:import/errors',
-    'plugin:import/warnings',
-    'plugin:node/recommended',
-    'plugin:promise/recommended',
-    '../rules/base',
-    '../rules/import',
-    '../rules/node',
-    '../rules/promise',
+    './rules/base',
+    './rules/jest',
+    './rules/import',
+    './rules/node',
+    './rules/promise',
     'eslint-config-prettier',
   ].map(require.resolve),
   parserOptions: {

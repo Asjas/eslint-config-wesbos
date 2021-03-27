@@ -25,11 +25,13 @@
     "eslint-config-prettier": ">=8.0.0",
     "eslint-plugin-html": ">=6.0.0",
     "eslint-plugin-import": ">=2.16.0",
+    "eslint-plugin-jest": ">=24.0.0",
     "eslint-plugin-jsx-a11y": ">=6.2.0",
     "eslint-plugin-node": ">=11.0.0",
     "eslint-plugin-promise": ">=4.2.0",
     "eslint-plugin-react": ">=7.14.0",
     "eslint-plugin-react-hooks": ">=4.0.0",
+    "eslint-plugin-testing-library": ">=3.0.0",
     "prettier": ">=2.1.0"
   },
   "dependencies": {
@@ -42,11 +44,13 @@
     "eslint-config-prettier": ">=8.0.0",
     "eslint-plugin-html": ">=6.0.0",
     "eslint-plugin-import": ">=2.16.0",
+    "eslint-plugin-jest": ">=24.0.0",
     "eslint-plugin-jsx-a11y": ">=6.2.0",
     "eslint-plugin-node": ">=11.0.0",
     "eslint-plugin-promise": ">=4.2.0",
     "eslint-plugin-react": ">=7.14.0",
     "eslint-plugin-react-hooks": ">=4.0.0",
+    "eslint-plugin-testing-library": ">=3.0.0",
     "prettier": ">=2.1.0"
   }
 }

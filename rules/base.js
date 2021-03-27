@@ -1,4 +1,5 @@
 module.exports = {
+  plugins: ['html'],
   rules: {
     'arrow-body-style': [2, 'as-needed'],
     'consistent-return': 2,

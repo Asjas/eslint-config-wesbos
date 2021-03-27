@@ -21,11 +21,24 @@ npm i -D eslint-config-asjas
 
 Create a file named `.eslintrc` in the root folder of the project. Then add one of the following configs.
 
-#### Vanilla JavaScript Config
+#### JavaScript Config
 
 ```json
 {
   "extends": ["eslint-config-asjas/javascript"],
+  "rules": {}
+}
+```
+
+#### TypeScript Config
+
+```json
+{
+  "extends": ["eslint-config-asjas/typescript"],
+  "parserOptions": {
+    "tsconfigRootDir": ".",
+    "project": "tsconfig.json"
+  },
   "rules": {}
 }
 ```

@@ -102,10 +102,20 @@ build
 # don't lint cache output
 .cache
 .next
+.vercel
 .keystone
 
 # don't lint nyc coverage output
 coverage
+
+# don't link vscode project settings
+.vscode
+
+# don't lint tooling config files
+postcss.config.js
+remix.config.js
+jest.setup.js
+tailwind.config.js
 ```
 
 ### Prettier Config
@@ -128,9 +138,9 @@ In a mono-repo you might need to change `.gitignore` to `../.gitnore` to referen
 "scripts": {
   "build": "replace with your build command",
   "check-types": "tsc",
-  "lint": "eslint --ignore-path .gitignore --ext .js,.mjs,.ts,.tsx .",
+  "lint": "eslint --ext .js,.mjs,.ts,.tsx .",
   "lint-fix": "npm run lint -- --fix",
-  "prettier": "prettier --ignore-path .gitignore \"**/**/*.+(js|mjs|json|ts|tsx)\"",
+  "prettier": "prettier --ignore-path .eslintignore \"**/**/*.+(js|mjs|json|ts|tsx|md|mdx)\"",
   "format": "npm run prettier -- --write",
   "check-format": "npm run prettier -- --list-different",
   "validate": "npm-run-all --parallel check-types check-format lint build"
@@ -161,7 +171,7 @@ Add these fields to your `package.json` file.
   "*.+(js|mjs|ts|tsx)": [
     "eslint"
   ],
-  "**/**/*.+(js|mjs|json|ts|tsx)": [
+  "**/**/*.+(js|mjs|json|ts|tsx|md|mdx)": [
     "prettier --write",
     "git add"
   ]

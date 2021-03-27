@@ -21,11 +21,21 @@ npm i -D eslint-config-asjas
 
 Create a file named `.eslintrc` in the root folder of the project. Then add one of the following configs.
 
+#### Vanilla JavaScript Config
+
+```json
+{
+  "extends": ["eslint-config-asjas/javascript"],
+  "rules": {}
+}
+```
+
 #### Node.js Config
 
 ```json
 {
-  "extends": ["eslint-config-asjas/node"]
+  "extends": ["eslint-config-asjas/node"],
+  "rules": {}
 }
 ```
 
@@ -37,7 +47,8 @@ Create a file named `.eslintrc` in the root folder of the project. Then add one 
   "parserOptions": {
     "tsconfigRootDir": ".",
     "project": "tsconfig.json"
-  }
+  },
+  "rules": {}
 }
 ```
 
@@ -45,7 +56,8 @@ Create a file named `.eslintrc` in the root folder of the project. Then add one 
 
 ```json
 {
-  "extends": ["eslint-config-asjas/react"]
+  "extends": ["eslint-config-asjas/react"],
+  "rules": {}
 }
 ```
 
@@ -57,7 +69,8 @@ Create a file named `.eslintrc` in the root folder of the project. Then add one 
   "parserOptions": {
     "tsconfigRootDir": ".",
     "project": "tsconfig.json"
-  }
+  },
+  "rules": {}
 }
 ```
 

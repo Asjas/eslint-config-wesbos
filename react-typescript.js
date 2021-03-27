@@ -2,6 +2,7 @@ module.exports = {
   extends: [
     "eslint-config-airbnb-typescript",
     "./rules/base",
+    "./rules/cypress",
     "./rules/import",
     "./rules/jest",
     "./rules/promise",
@@ -22,8 +23,9 @@ module.exports = {
   env: {
     browser: true,
     node: true,
-    jest: true,
     es2021: true,
+    "jest/globals": true,
+    "cypress/globals": true,
   },
   settings: {
     react: {

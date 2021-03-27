@@ -14,11 +14,11 @@ module.exports = {
       jsx: true,
     },
     ecmaVersion: 2021,
-    sourceType: "module",
+    sourceType: 'module',
   },
   env: {
     browser: true,
-    node: false,
+    node: true,
     jest: true,
     es2021: true,
   },

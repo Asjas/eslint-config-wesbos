@@ -1,17 +1,4 @@
 module.exports = {
-  extends: ['plugin:react/recommended', 'plugin:react-hooks/recommended', 'plugin:jsx-a11y/recommended'],
-  settings: {
-    react: {
-      version: 'detect',
-    },
-    linkComponents: [
-      // Components used as alternatives to <a> for linking, eg. <Link to={ url } />
-      'Hyperlink',
-      { name: 'Link', linkAttribute: 'to' },
-      'Hyperlink',
-      { name: 'Link', linkAttribute: 'href' },
-    ],
-  },
   rules: {
     // Custom React rules
     'react/button-has-type': 2,

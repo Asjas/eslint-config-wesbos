@@ -1,6 +1,10 @@
 module.exports = {
   extends: [
     'eslint-config-airbnb-base',
+    'plugin:import/errors',
+    'plugin:import/warnings',
+    'plugin:node/recommended',
+    'plugin:promise/recommended',
     '../rules/base',
     '../rules/import',
     '../rules/node',
@@ -12,7 +16,7 @@ module.exports = {
       impliedStrict: true,
     },
     ecmaVersion: 2021,
-    sourceType: "module",
+    sourceType: 'module',
   },
   env: {
     browser: false,

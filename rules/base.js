@@ -8,8 +8,12 @@ module.exports = {
     'no-console': 1,
     'no-debugger': 1,
     'no-param-reassign': 2,
+    'no-plusplus': 0,
+    'no-restricted-globals': 0,
     'no-restricted-syntax': [2, 'ForInStatement', 'DoWhileStatement', 'LabeledStatement', 'WithStatement'],
     'no-return-assign': [2, 'except-parens'],
+    'no-use-before-define': 0,
+    'no-void': 0,
     'no-unused-vars': [
       1,
       {

@@ -1,13 +1,19 @@
 module.exports = {
+  plugins: ['html'],
   extends: [
     'eslint-config-airbnb',
+    'plugin:import/errors',
+    'plugin:import/warnings',
+    'plugin:promise/recommended',
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:jsx-a11y/recommended',
     './rules/base',
     './rules/import',
     './rules/promise',
     './rules/react',
     'eslint-config-prettier',
   ].map(require.resolve),
-  plugins: ['html'],
   parserOptions: {
     ecmaFeatures: {
       impliedStrict: true,
@@ -22,5 +28,16 @@ module.exports = {
     jest: true,
     es2021: true,
   },
-  rules: {},
+  settings: {
+    react: {
+      version: 'detect',
+    },
+    linkComponents: [
+      // Components used as alternatives to <a> for linking, eg. <Link to={ url } />
+      'Hyperlink',
+      { name: 'Link', linkAttribute: 'to' },
+      'Hyperlink',
+      { name: 'Link', linkAttribute: 'href' },
+    ],
+  },
 };

@@ -1,7 +1,6 @@
 module.exports = {
-  plugins: ['@typescript-eslint/eslint-plugin', 'html'],
+  plugins: ['@typescript-eslint', 'html'],
   extends: [
-    'plugin:@typescript-eslint/eslint-recommended',
     'eslint-config-airbnb-typescript',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',

@@ -38,6 +38,27 @@ Create a file named `.eslintrc` in the root folder of the project. Then add one 
 }
 ```
 
+#### ESLint Ignore
+
+You can create a `.eslintignore` file and then add any files or folders to it that you do not want ESLint to lint.
+
+```json
+# don't ever lint node_modules
+node_modules
+
+# don't lint build output (make sure it's set to your correct build folder name)
+dist
+build
+
+# don't lint cache output
+.cache
+.next
+.keystone
+
+# don't lint nyc coverage output
+coverage
+```
+
 ### Prettier Config
 
 Create a file named `.prettierrc.js` in the root folder of the project. Then add the following config.

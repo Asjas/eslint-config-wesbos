@@ -6,7 +6,7 @@ module.exports = {
     "./rules/import",
     "./rules/jest",
     "./rules/promise",
-    "./rules/testing-libary",
+    "./rules/testing-library",
     "eslint-config-prettier",
   ].map(require.resolve),
   parserOptions: {

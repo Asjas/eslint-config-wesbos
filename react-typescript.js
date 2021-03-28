@@ -7,7 +7,7 @@ module.exports = {
     "./rules/jest",
     "./rules/promise",
     "./rules/react",
-    "./rules/testing-libary",
+    "./rules/testing-library",
     "./rules/typescript",
     "eslint-config-prettier",
   ].map(require.resolve),

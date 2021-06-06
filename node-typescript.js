@@ -3,7 +3,6 @@ module.exports = {
     "eslint-config-airbnb-typescript/base",
     "./rules/base",
     "./rules/import",
-    "./rules/jest",
     "./rules/promise",
     "./rules/node",
     "./rules/testing-library",
@@ -21,7 +20,7 @@ module.exports = {
   env: {
     browser: false,
     node: true,
-    jest: true,
+    jest: false,
     es2021: true,
   },
 };

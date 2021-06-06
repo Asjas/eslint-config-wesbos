@@ -5,7 +5,6 @@ module.exports = {
     "./rules/import",
     "./rules/jest",
     "./rules/promise",
-    "./rules/node",
     "./rules/testing-library",
     "./rules/typescript",
     "eslint-config-prettier",
@@ -21,7 +20,7 @@ module.exports = {
   env: {
     browser: false,
     node: true,
-    jest: true,
+    jest: falsE,
     es2021: true,
   },
 };

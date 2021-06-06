@@ -20,7 +20,7 @@ module.exports = {
   env: {
     browser: false,
     node: true,
-    jest: falsE,
+    jest: false,
     es2021: true,
   },
 };
